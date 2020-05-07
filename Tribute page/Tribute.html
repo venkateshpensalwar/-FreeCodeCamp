@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tribute Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<style type="text/css">
+	
+		html,body{
+			padding: 0;
+			margin:0;
+			height: 100%;
+			font-family: 'Roboto', sans-serif;
+		}
+		header{
+			background-color: rgba(0,0,0,0.9);
+			width: 100%;
+			height: 50%;
+			position: relative;
+		}
+		
+		nav{
+			padding: 10px;
+			margin-left: 20%;
+		}
+		nav a{
+			text-decoration: none;
+			color: white;
+			text-transform: uppercase;
+			letter-spacing:1px;
+			padding: 8px;
+
+		}
+		#title{
+			color: white;
+			text-align: center;
+			position:relative;
+			top: 100px;
+			letter-spacing: 2px;
+			word-spacing: 5px;
+		}
+		#img-div{
+			width: 100%;
+			margin-top: 10%;
+			margin-bottom:5%;
+
+		}
+		#image{
+			width: 500px;
+			display: block;
+			max-width: 100%;
+			height:auto;
+			margin: auto;
+		}
+		#img-caption{
+			font-size: 26px;
+			text-align: center;
+		}
+		footer{
+			color:white;
+			background-color: rgba(0,0,0,0.9);
+			width:100%;
+			height:20%;
+			padding-top: 10px;
+			position: relative;
+		}
+		footer::before{
+			content: "";
+			background-color:white;
+			width: 10px;
+			height: 10px;
+			position: absolute;
+			top:-3%;
+			left:50%;
+			transform: rotate(45deg);
+
+		}
+		footer p{
+			letter-spacing: 1px;
+			word-spacing: 2px;
+			text-align: center;
+			font-size: 20px;
+		}
+		#tribute-info{
+			width: 60%;
+			max-width: 100%;
+			margin: auto;
+			text-align:justify;
+			letter-spacing: 1px;
+			word-spacing: 1px;
+			font-size: 20px;
+			line-height:25px;
+			
+		}
+		@media (max-width: 600px){
+			#tribute-info{
+				width: 100%;
+			}
+		}
+		#tribute-link{
+			color: white;
+			text-decoration: none;
+		}
+		#tribute-link:hover{
+			color:royalblue;
+		}
+
+	</style>
+</head>
+<body>
+	<header id="main">
+			<nav>
+			<a href="#">home</a>
+			<a href="#tribute-info">about</a>
+			<a href="#tribute-link">more information</a>
+		</nav>
+		
+		<h1 id="title">Bhagat singh</h1>
+		<h3 id="title">Freedom fighter</h3>
+	</header>
+	<section id="img-div">
+		<img id="image"  src="https://upload.wikimedia.org/wikipedia/commons/5/54/Bhagat_Singh_1929.jpg" alt="Bhagat Singh">
+		<p id="img-caption">1907-1931</p>
+	</section>
+	<section id="tribute-info">
+		<p><strong>Bhagat Singh</strong> was a brave freedom fighter and revolutionary of the India Independence movement. His feelings of patriotism were not only restricted against British rule but also towards the division of India on communal lines. He could foresee it and finding such an esteemed leader is difficult. He was genius, mature and always attract towards socialism. He in fact participated in the non-cooperation movement.
+
+He was attracted to anarchist and Marxist ideologies which further bring revolutionary ideas in his mind. He was a bright student, a reader and always actively participated in extra-curricular activities.
+He was born on 28 September, 1907 in Punjab, India (now Pakistan), to a Sikh family. He was involved with several revolutionary organisations and set an example of patriotism in the country.
+
+He quit school at thirteen to devote his life to Indian Independence and died at a very young age of 23. Popularly he is known as Shaheed-e-Azam Bhagat Singh. He was found guilty of killing a British police officer and hanged on March 23, 1931. Here, we are presenting some inspiring and unknown facts about Bhagat Singh.
+<p><strong>The Turning Point for Bhagat Singh:</strong> 
+The British government held the Simon Commission in 1928 to discuss autonomy for the Indians. But It was boycotted by several political organizations because this commission did not include any Indian representative.
+
+Lala Lajpat Rai protested against the same and lead a procession and march towards the Lahore station. Police used the Lathi charge to control the mob. Because of Lathi charge police brutally hit the protestors. Lala Lajpat Rai got seriously injured and he was hospitalized. After few weeks Lala Ji became shaheed.
+
+This incident left Bhagat Singh enraged and therefore he planned to take revenge of  Lala Ji’s death. Hence, he killed British police officer John P. Saunders soon after. Later he and his associates bombed the Central Legislative Assembly in Delhi. Police arrested them, and Bhagat Singh confessed his involvement in the incident.
+
+During the trial period, Bhagat Singh led a hunger strike in the prison. He and his co-conspirators, Rajguru and Sukhdev were executed on the 23rd of March 1931.</p>
+<br><p style="text-align: center;font-weight: bold;">"Life is lived on its ownother's shoulders are used only at the time of funeral."</p></p>
+		
+
+	</section>
+	<footer>
+		<p>If you have time, you should read more about this incredible human being on his<p>
+		<a id="tribute-link" href="https://en.wikipedia.org/wiki/Bhagat_Singh" target="_blank"><p>Wkipedia Page.</p></a>
+
+	</footer>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

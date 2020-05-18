@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300&display=swap');
+html,body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  
+  font-family: 'Arima Madurai', cursive;
+}
+.wrapper{
+  position: relative;
+}
+.logo{
+	width: 20vw;
+}
+#header-img{
+	width: 100px;
+	height:80px;
+	cursor: pointer;
+	color: white;
+}
+#header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background-color:transparent;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding:0rem 1rem;
+}
+#nav-bar{
+	display: flex;
+	font-size: 1.5rem;
+	width: 100%;
+	justify-content:flex-end;
+}
+#nav-bar ul{
+	list-style: none;
+	display: flex;
+}
+#nav-bar ul a{
+	text-decoration: none;
+	padding: 0rem 1.5rem;
+	color: white;
+}
+
+.product-info{
+	margin:8rem 5rem;
+	
+}
+#p-grid{
+	display: grid;
+	grid-template-columns:5fr 5fr;
+	align-items: center;
+	justify-content:center;
+	grid-gap:25rem;
+	
+
+}
+.product-info h1{
+	font-size:3rem;
+	text-align:center;
+	
+}
+.product-info p{
+	margin:1rem 0;
+	text-align: center;	
+}
+#form{
+	
+	text-align: center;
+}
+#email{
+	border:none;
+	padding: 8px 0px;
+	border-bottom: 2px solid black;
+	width:50%;
+	font-size:1.2rem;
+}
+#submit{
+	margin:1.8rem 0;
+	padding: 7px 14px;
+	border-radius:30px;
+	border:none;
+	font-size:1.2rem;
+	color: white;
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.8);
+}
+
+.features{
+	margin:3rem 2rem;
+	text-align: center;
+	grid-gap:1rem;
+	display: grid;
+	grid-template-columns:auto auto auto;
+}
+.card{
+	padding:7px;
+	box-shadow: 0 0 10px 0 black;
+}
+i{
+	font-size: 2rem;
+}
+.video{
+	padding: 2rem;
+	display: flex;
+	justify-content: center;
+
+}
+.footer {
+	background-color: rgba(0,0,0,1);
+	color: white;
+	text-align: center;
+	
+}
+.footer i {
+	padding:7px 3rem;
+}
+.footer a{
+	color: white;
+}
+@media (max-width:768px)
+{
+	#p-grid{
+		display: flex;
+		flex-direction: column;
+	 	width: 100%;
+}
+#nav-bar{
+	display: flex;
+	font-size: 1.5rem;
+	width: 100%;
+	justify-content:flex-end;
+}
+}
+@media (max-width:500px)
+{
+	#p-grid{
+		display: flex;
+		flex-direction: column;
+	 	width: 100%;
+}
+#nav-bar{
+	display: flex;
+	font-size: 1.5rem;
+	width: 100%;
+	justify-content:flex-end;
+}
+.features{
+	margin:3rem 2rem;
+	text-align: center;
+	grid-gap:1rem;
+	display: grid;
+	grid-template-columns:auto;
+}
+.footer {
+	background-color: rgba(0,0,0,1);
+	color: white;
+	text-align: center;
+
+}
+.footer i {
+	padding:7px 1.5rem;
+}
+.footer a{
+	color: white;
+}
+	#nav-bar ul{
+	list-style: none;
+	display: flex;
+		flex-direction: column;
+}
+#nav-bar ul a{
+	text-decoration: none;
+	padding: 0rem 2.5rem;
+	color: white;
+}	
+}

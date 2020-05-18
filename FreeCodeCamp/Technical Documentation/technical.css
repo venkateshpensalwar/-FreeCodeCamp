@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300&display=swap');
+html{
+	 font-family: 'Arima Madurai', cursive;
+	height: 100%;
+}
+:root{
+	--back-color: rgb(44, 44, 44);
+	--font-color: #F44336;
+}
+body{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	display: grid;
+	grid-template-columns:25% 75%;
+
+}
+/* ------------------------navbar-section----------------------------------------- */
+.nav-wrap{
+	position: relative;
+}
+#navbar{
+	width: 24%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color:var(--back-color,red);
+}
+#navbar header{
+	text-align: center;
+	padding: 2rem 0rem;
+	font-size:2rem;
+	color:white;
+	background-color:var(--font-color,white);
+}
+#navbar .links{
+	height:85%;
+	overflow-y:auto;
+	
+}
+#navbar a{
+	text-align: center;
+	padding:0.5rem 0.8rem;
+	margin:2rem 2rem;
+	display: block;
+	border-bottom: 2px solid black;
+	text-decoration: none;
+	color:white;
+}
+#navbar a:hover{
+	font-size: 2rem;
+	color: #F44336;
+
+}
+/*----------------main-section-------------------------------*/
+
+.wrapper{
+	padding: 2rem 0;
+}
+.wrapper header{
+color: #F44336;
+font-size:2rem;	
+}
+.wrapper code{
+	display: block;
+	font-size: 1.2rem;
+	background-color:lightgray;
+	padding: 7px 14px;
+}
+/* --------------for ipad---------------------------*/
+@media screen and (max-width: 768px)
+{
+	body{
+		padding: 0;
+	margin: 0;
+	width: 100%;
+	display: grid;
+	grid-template-columns:30% 70%;
+}
+	#navbar{
+	width: 28%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color:var(--back-color,red);
+}
+#navbar header{
+	text-align: center;
+	padding: 2rem 0rem;
+	font-size:1.5rem;
+	color:white;
+	background-color:var(--font-color,white);
+}
+}
+/* --------------for Mobile Phons---------------------------*/
+@media screen and (max-width: 500px)
+{
+body{
+	padding: 0;
+	margin:0;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	}
+#navbar{
+	width: 100%;
+	height:50%;
+	background-color:var(--back-color,red);
+	overflow: hidden;
+	position:relative;
+}
+
+.wrapper header{
+text-align: center;
+}
+.wrapper{
+	margin-top: 50px;
+}
+
+}

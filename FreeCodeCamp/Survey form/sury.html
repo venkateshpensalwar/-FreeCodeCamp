@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="sury.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<h1 id="title">Restaurant Survey Form</h1>
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+<form id="survey-form">
+<label for="name" id="name-label">name</label>
+<input type="text" id="name" placeholder="Enter your name" required><br>
+
+<label for="email" id="email-label">E-mail</label>
+<input type="email" id="email" placeholder="Enter E-mail id" required><br>
+
+<label for="tel" id="mobile-label">Mobile no.</label>
+<input type="tel" id="mobile" placeholder="Enter Mobile number" required><br>
+
+<label for="number" id="number-label">Age</label>
+<input type="number" id="number" placeholder="Enter Age" min="10" max="100" required><br>
+<label id="qus">Are you vegetarian or non-vegetarian?</label><br>
+<select id="dropdown">
+<option>Select options</option>
+<option>Yes</option>
+<option>No</option>
+<option>Both</option>
+</select><br>
+<label id="qus">Are you male or female?</label><br>
+<input  type="radio" value="male" name="gender">
+<label for="male" id="gender-label" >male</label><br>
+<input  type="radio" value="female" name="gender">
+<label for="female" id="gender-label" >female</label>
+<br>
+<label id="qus">Do you think the food you buy is good value for money?</label><br>
+<input  type="checkbox" value="very good" name="survey-qus">
+<label for="very good" id="gender-label" >Yes</label><br>
+
+<input  type="checkbox" value="good" name="survey-qus">
+<label for="good" id="gender-label" >No</label><br>
+
+<input  type="checkbox" value="Average " name="survey-qus">
+<label for="Average" id="gender-label" >Other</label><br>
+<input type="text" id="name" placeholder="Enter your Suggestion">
+
+ <label id="qus">How do you rate the service you receive from the staff?</label><br>
+ <input  type="checkbox" value="very good" name="survey-qus">
+<label for="very good" id="gender-label" >Very good</label><br>
+
+<input  type="checkbox" value="good" name="survey-qus">
+<label for="good" id="gender-label" >Good</label><br>
+
+<input  type="checkbox" value="Average " name="survey-qus">
+<label for="Average" id="gender-label" >Average</label><br>
+
+<input  type="checkbox" value="bad" name="survey-qus">
+<label for="bad" id="gender-label" >Bad</label><br>
+
+<label id="qus">Any suggestion about Restaurant improvement? </label><br>
+<textarea rows="10" placeholder="Enter any comment"></textarea><br>
+
+<button id="submit">submit</button>
+
+</form>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

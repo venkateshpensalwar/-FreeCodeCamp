@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300&display=swap');
+
+html,body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: 'Arima Madurai', cursive;
+  scroll-behavior: smooth;
+  background:linear-gradient(to right, #7AE0D6, #0066FF);
+}
+
+/* NAV SECTION */
+
+
+#navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:100;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: white
+
+
+}
+.nav-list{
+  list-style: none;
+ display: flex;
+  font-size:1.5rem;
+  margin:1.2rem 0;
+}
+.nav-list a{
+   margin: 0 ;
+  display: block;
+  text-decoration: none;
+  padding:0 1.8rem;
+  color:black;
+
+}
+.nav-list a:hover{
+
+  border-bottom: 2px solid black;
+}
+#welcome-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+#welcome-section h1{
+  color:black;
+  font-size: 4rem;
+  margin: 0;
+
+
+}
+#welcome-section p{
+  font-size: 3rem;
+margin: 0;
+  color:black;
+  font-style: italic;
+}
+
+#About{
+  width: 100%;
+ display: flex;
+ flex-direction: column;
+ height: 80vh;
+ justify-content: center;
+ align-items: center;
+ 
+}
+.About-grid{
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  width: 70%;
+}
+.About-grid img{
+ width:30%;
+ height:auto;
+ padding:8px 4px;
+ border-radius:80%;
+}
+.About-grid img:hover{
+
+ height:auto;
+ padding:4px 4px;
+ border-radius:5%;
+ transition: border-radius 0.3s ease-out; 
+}
+#About h2{
+   text-align: center;
+  font-size: 2.5rem;
+}
+#About p{
+  width: 500px;
+  font-size: 1.5rem;
+
+}
+
+#projects{
+  padding: 4rem 2rem ;
+  padding-bottom: 8rem;
+  text-align: center;
+
+}
+#projects h2{
+  text-align: center;
+font-size: 3rem;
+color:black;
+
+
+ 
+}
+
+.project-tile{
+  display: grid;
+  justify-content: center;
+ grid-gap:5rem;
+  grid-template-columns:repeat(auto-fit,300px);
+
+}
+.card{
+  background-color: white;
+  width:300px;
+  height:500px;
+  box-shadow: 0px 4px 8px 0 rgba(0,0,0.2);
+
+}
+ .image img{
+width:100%;
+  height:450px;
+}
+
+.link{
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+
+}
+.link a{
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+ 
+}
+.link a:hover{
+ background-color: black;
+   transition:background-color 0.3s ease-out; 
+  color: white;
+}
+
+#contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+}
+.contact-section-header h2{
+  font-size: 5rem;
+  margin:0;
+
+}
+.social-media {
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+.social-media a{
+  text-decoration: none;
+  color:black;
+  font-size: 2rem;
+  margin: 0 2rem;
+
+}
+.social-media a:hover{
+  transition:transform 0.3s ease-out;
+  transform: translateY(8px);
+}
+.social-media i{
+  font-size: 2rem;
+  }
+footer{
+  text-align: center;
+}
+/* --------- ipad Devices -------------*/
+@media screen and (max-width: 768px) {
+      
+#navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:100;
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  background-color: white
+  }
+  .About-grid{
+  display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+  border-radius: 10px;
+  width: 70%;
+}
+.About-grid img{
+ width:30%;
+ margin: auto;
+ height:auto;
+ padding:8px 4px;
+ border-radius:80%;
+}
+
+} 
+
+/*-----------------------Mobile-Devices ---------------------------------------*/
+
+
+@media screen and (max-width:500px){
+
+  #navbar{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+.nav-list{
+
+  list-style: none;
+  font-size:1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.nav-list li{
+  text-align: center;
+  display: block;
+  margin:8px;
+  width: 100%;
+}
+.nav-list a{
+  text-align: center;
+  text-decoration: none;
+  color:black;
+
+}
+.nav-list a:hover{
+
+  border-bottom: 2px solid black;
+}
+#welcome-section h1{
+  text-align: center;
+  color:black;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.About-grid{
+
+  width:100%;
+}
+#About p{
+  text-align: justify;
+  width:100%;
+  font-size: 1.5rem;
+
+}
+.contact-section-header h2{
+  font-size:3rem;
+  margin:0;
+  text-align: center;
+
+}
+
+}
+
+
+
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="product.css">
+	<script src="https://kit.fontawesome.com/b695a99d57.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		#header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background-color:black;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding:0rem 1rem;
+}
+@media (max-width:768px)
+{
+	#p-grid{
+		display: flex;
+		flex-direction: column;
+	 	width: 100%;
+}
+#nav-bar{
+	display: flex;
+	font-size: 1.5rem;
+	width: 100%;
+	justify-content:flex-end;
+}
+}
+	</style>
+</head>
+<body>
+<div class="wrapper">
+<header id="header">
+	<div class="logo">
+	<img id="header-img"src="https://drive.google.com/file/d/1XeD_Xz9tC4DzDXS494ti7Kn2EfqC9dJg/view" alt="Phono.in" >
+	</div>
+	<nav id="nav-bar">
+		<ul>
+			<li><a href="#p-grid" class= "nav-link">Home</a></li>
+			<li><a href="#features"class="nav-link">Features</a></li>
+			<li><a href="#video"class="nav-link">More</a></li>
+		</ul>
+		
+	</nav>
+	</header>
+	<section class="product-info">
+		<div id="p-grid">
+			<div>
+				<h1>The headphones of the future.</h1>
+				 <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+            repudiandae rerum libero ipsum asperiores omnis mollitia, nostrum
+            commodi placeat ea itaque modi corrupti corporis nam voluptas aut
+            reprehenderit eaque culpa.
+            <p style="font-size: 1.8rem;">Book Now At...<i class="fa fa-dollar"></i>300</p>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+            	<input type="email" name="email" id="email" placeholder="xyz@gmail.com"><br>
+            	<input type="submit" id="submit" value="submit">
+            </form>
+          </p>
+
+			</div>
+			 <img src="https://i.ibb.co/37Y74kv/showcase.jpg" alt="">
+
+
+		</div>
+	</section>
+	<h1 id="features"style="text-align: center;">The Features</h1>
+	<section  class="features">
+		<div class="card">
+			 <i class="fas fa-headphones-alt"></i>
+			<h1>classic design</h1>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. 
+		</div>
+		<div class="card">
+			<i class="fas fa-music"></i>
+			<h1>noise cancellation</h1>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</div>
+		<div class="card">
+			<i class="fas fa-battery-full"></i>
+			<h1> long battery backup</h1>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</div>
+		<div class="card">
+			<i class="fas fa-wifi"></i>
+			<h1>wireless headphons</h1>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</div>
+		<div class="card">
+			<i class="fab fa-bluetooth-b"></i>
+			<h1>bluetooth enabled</h1>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</div>
+		<div class="card">
+			<i class="fas fa-microphone"></i>
+			<h1>microphone enabled</h1>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</div>
+	</section>
+	<section class="video">
+	<iframe id="video" width="800" height="315" src="https://www.youtube.com/embed/4jk0Cq_vU2A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</section>
+	<footer class="footer">
+		<h2>Follow us</h2>
+		<a href="#"><i class="fa fa-facebook"></i></a>
+		<a href="#"><i class="fa fa-linkedin"></i></a>
+		<a href="#"><i class="fa fa-youtube"></i></a>
+		<a href="#"><i class="fa fa-twitter"></i></a>
+		<a href="#"><i class="fa fa-instagram"></i></a>
+		<p>&copy phono.in - All Right Reserved</p>
+	</footer>
+<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+	
+</script>
+</body>
+</html>
